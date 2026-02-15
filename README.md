@@ -61,7 +61,3 @@ flutter run
 
 ```
 
-Author
-
-**Delucie-coder** *Flutter Developer & UI Enthusiast*
-
