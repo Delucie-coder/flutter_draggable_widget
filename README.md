@@ -2,42 +2,15 @@ Flutter Draggable & DragTarget Widget
 
 A clean, interactive Flutter application demonstrating the implementation of drag-and-drop mechanics. This project showcases how to transfer data between widgets using the `Draggable` and `DragTarget` system.
 
-Features
-
-* **Real-time Interaction:** Visual feedback during the drag process (opacity changes).
-* **Type-Safe Data Transfer:** Sending `Color` objects as data payloads.
-* **Dynamic UI Updates:** The target box reacts when an item is hovering over it (glowing border and text change).
-* **Modern Flutter Implementation:** Uses the latest `withValues` API for color manipulations.
+## 📸 Final UI
+![App Screenshot]<img width="468" height="849" alt="Screenshot (738)" src="https://github.com/user-attachments/assets/49bb6892-0d71-41a1-84c5-b0e94d7f8ee5" />
 
 
-
-Technical Deep Dive
-
-### 1. The Draggable Widget
-
-The "Source" of the interaction. It is configured with three distinct states:
-
-* **`child`**: The default view (Orange, Teal, or Purple box).
-* **`feedback`**: A semi-transparent version wrapped in a `Material` widget that follows the user's touch.
-* **`childWhenDragging`**: A faded placeholder that stays in the original position to indicate the item is "gone."
-
-### 2. The DragTarget Widget
-
-The "Destination" of the interaction. It manages the logic for receiving data:
-
-* **`onWillAcceptWithDetails`**: Returns `true` to indicate it is ready to receive the incoming color data.
-* **`onAcceptWithDetails`**: Updates the app state with the new color and changes the status message.
-* **`builder`**: Monitors `candidateData` to change the UI (border color and opacity) when an item is being hovered over the target.
-
-
-
-Project Structure
-
-* **`main.dart`**: Contains the complete application logic and UI.
-* **`_buildDraggableItem`**: A helper method to ensure consistent behavior across all draggable colors.
-* **`_box`**: A reusable UI component for the colored squares.
-
-
+## Key Widget Attributes
+The implementation focuses on these three critical attributes of the **Draggable** widget:
+* **data**: The color object (payload) being transferred to the target.
+* **feedback**: The visual widget that follows the user's touch during the drag.
+* **childWhenDragging**: The placeholder widget that remains in the original list while the item is in motion
 
 Getting Started
 
