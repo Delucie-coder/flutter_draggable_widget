@@ -2,8 +2,8 @@ Flutter Draggable & DragTarget Widget
 
 A clean, interactive Flutter application demonstrating the implementation of drag-and-drop mechanics. This project showcases how to transfer data between widgets using the `Draggable` and `DragTarget` system.
 
-## 📸 Final UI
-![App Screenshot]<img width="468" height="849" alt="Screenshot (738)" src="https://github.com/user-attachments/assets/49bb6892-0d71-41a1-84c5-b0e94d7f8ee5" />
+##  Final UI
+<img width="468" height="849" alt="Screenshot (738)" src="https://github.com/user-attachments/assets/49bb6892-0d71-41a1-84c5-b0e94d7f8ee5" />
 
 
 ## Key Widget Attributes
